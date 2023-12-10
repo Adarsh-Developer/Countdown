@@ -1,0 +1,128 @@
+@font-face {
+  font-family: poppins;
+  src: url(./Poppins\ Font.woff2);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url(./background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body::after{
+  content: '';
+  position: absolute;
+  background: transparent;
+  /* backdrop-filter: blur(8px); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.main__container{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  backdrop-filter: blur(8px);
+  background-color: #ffffff4a;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+/* 
+.end__date {
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 15px;
+} */
+
+.countdown__details{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.countdown__details div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+}
+
+.countdown__details label {
+  margin-top: -20px;
+  font-size: 22px;
+}
+
+.countdown__details input {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.user__input-label{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.user__input-date{
+  height: 40px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  width: max-content;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:active{
+  transform: scale(0.95);
+}

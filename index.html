@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CountDown</title>
-    
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main__container">
       <label class="user__input-label" for="">Enter Date Here</label>
-      <input type="datetime-local" class="user__input-date">
-      <button>Start Countdown</button>
+      <input type="datetime-local" class="user__input-date" />
+      <div class="buttons">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+      </div>
       <!-- <div class="end__date"></div> -->
       <div class="countdown__details">
         <div>
@@ -35,6 +38,7 @@
           <label for="">Seconds</label>
         </div>
       </div>
+      <button class="reset">Reset</button>
     </div>
 
     <script src="script.js"></script>

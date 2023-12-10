@@ -19,5 +19,4 @@ function clock() {
 const button = document.querySelector("button");
 button.addEventListener("click", function () {
   setInterval(() => clock(), 1000);
-  console.log(userInput.value);
 });
